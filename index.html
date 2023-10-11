@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour-Blindness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Experience Colour Blindness</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="section1">
+            <div class="selectlabels">
+                <label for="normal">Select Colour</label>
+                <label for="selected">Select Type of Colour-Blindness</label>
+            </div>
+
+            <div class="select">
+                <select name="Blindness" id="selected">
+                    <option value="Protanopia">Protanopia</option>
+                    <option value="Deuteranopia">Deuteranopia</option>
+                    <option value="Tritanopia">Tritanopia</option>
+                    <option value="Protanomaly">Protanomaly</option>
+                    <option value="Deuteranomaly">Deuteranomaly</option>
+                    <option value="Tritanomaly">Tritanomaly</option>
+                    <option value="Monochromacy">Monochromacy</option>
+                </select>
+            </div>
+
+            <div class="colorviews">
+                <input type="color" name="normal" id="normal" value="#000000">
+                <div id="colorDiv"></div>
+            </div>
+
+            <div class="names">
+                <p>Normal View</p>
+                <p id="blindnessLabel">Protanopia</p>
+            </div>
+
+            <div class="check-section">
+                <button id="checkButton">Experience</button>
+            </div>
+        </div>
+
+        <h2 id="Compare">Compare all</h2>
+        <div class="section2">
+            <div class="box">
+                <div id="box1"></div>
+                <p>Protanopia</p>
+            </div>
+            <div class="box">
+                <div id="box2"></div>
+                <p>Deuteranopia</p>
+            </div>
+            <div class="box">
+                <div id="box3"></div>
+                <p>Tritanopia</p>
+            </div>
+            <div class="box">
+                <div id="box4"></div>
+                <p>Deuteranomaly</p>
+            </div>
+            <div class="box">
+                <div id="box5"></div>
+                <p>Protanopia</p>
+            </div>
+            <div class="box">
+                <div id="box6"></div>
+                <p>Tritanomaly</p>
+            </div>
+            <div class="box">
+                <div id="box7"></div>
+                <p>Monochromacy</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Made by <b>Yagna Kusumanchi</b></p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
