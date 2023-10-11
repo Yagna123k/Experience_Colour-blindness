@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@300&family=Roboto:wght@300&family=Work+Sans&display=swap');
+
+/* Global styles */
+
+body {
+    font-family: 'Open Sans', 'Oswald', 'Roboto', 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #023B6D;
+    color: white;
+    padding: 10px 0;
+}
+
+nav h1 {
+    font-weight: 900;
+    font-size: 28px;
+}
+
+main {
+    margin: 3% 10%;
+    color: #023B6D;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+/* Header and Navigation */
+
+.nav {
+    background-color: #023B6D;
+    color: white;
+    font-weight: 900;
+    font-size: 28px;
+    padding: 10px 0;
+}
+
+/* Section 1 - Form and Color Views */
+
+.section1 {
+    margin: 3% 10%;
+    color: #023B6D;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.selectlabels {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+}
+
+.select select {
+    height: 35px;
+    border-radius: 5px;
+    width: 150px;
+    background-color: rgba(2, 59, 109, 0.8);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.select {
+    display: flex;
+    justify-content: right;
+    margin-top: 15px;
+    margin-right: 80px;
+}
+
+#normal {
+    width: 250px;
+    height: 250px;
+    padding: 0;
+    border: none;
+    background-color: white;
+}
+
+input[type='color']::-webkit-color-swatch {
+    border-radius: 10px;
+}
+
+input[type='color'] {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: #ffffff;
+}
+
+.colorviews {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 40px;
+}
+
+#colorDiv {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+.names {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 100px;
+    font-weight: 900;
+}
+
+.check-section button {
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    color: white;
+    background-color: #023B6D;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Section 2 - Color Boxes */
+
+#Compare {
+    margin-top: 100px;
+}
+
+.section2 {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box div {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+/* Responsive Media Queries */
+
+/* Adjust styles for screens less than 768px wide (tablets and smaller) */
+@media screen and (max-width: 768px) {
+    .section1 {
+        margin: 3% 5%;
+    }
+    .selectlabels {
+        flex-direction: column;
+        align-items: center;
+    }
+    .select {
+        margin: 10px auto;
+    }
+    #normal {
+        width: 150px;
+        height: 150px;
+    }
+    #colorDiv{
+        width: 150px;
+        height: 150px;
+    }
+    .colorviews {
+        flex-direction: column;
+        align-items: center;
+    }
+    .names {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px auto;
+    }
+    .check-section button {
+        width: 100%;
+        max-width: 200px;
+    }
+    #Compare {
+        margin-top: 40px;
+    }
+    .section2 {
+        flex-direction: column;
+    }
+    .box div {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Adjust styles for screens less than 480px wide (mobile devices) */
+@media screen and (max-width: 480px) {
+    .section1 {
+        margin: 3% 3%;
+    }
+    .select select {
+        width: 100%;
+    }
+    #normal {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 25px;
+    }
+    .colorviews {
+        margin: 10px auto;
+    }
+    .names {
+        margin: 10px auto;
+    }
+    .check-section button {
+        max-width: 150px;
+    }
+    .section2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        display: contents;
+        justify-content: center;
+    }
+    .box div {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Additional media queries for other screen sizes can be added as needed */
